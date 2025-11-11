@@ -1,0 +1,59 @@
+[
+  {
+    "pension_number": "CNR04125A",
+    "password": "Retraite@2025",
+    "first_name": "Ali",
+    "last_name": "Benyoucef",
+    "phone": "+213661223344",
+    "has_logged_in": false,
+    "agency": {
+      "name": "CNR Alger Centre",
+      "location": "Alger Centre",
+      "distance_km": 2.4,
+      "tickets": {
+        "date": "2025-11-11",
+        "total": 120,
+        "processed": 85,
+        "waiting": 35
+      }
+    }
+  },
+  {
+    "pension_number": "CNR03099B",
+    "password": "CNR#2024",
+    "first_name": "Khadija",
+    "last_name": "Saadi",
+    "phone": "+213771112233",
+    "has_logged_in": false,
+    "agency": {
+      "name": "CNR Oran",
+      "location": "Oran",
+      "distance_km": 410.7,
+      "tickets": {
+        "date": "2025-11-11",
+        "total": 100,
+        "processed": 60,
+        "waiting": 40
+      }
+    }
+  },
+  {
+    "pension_number": "CNR05644C",
+    "password": "SecurePass123",
+    "first_name": "Mourad",
+    "last_name": "Ait Ali",
+    "phone": "+213550998877",
+    "has_logged_in": false,
+    "agency": {
+      "name": "CNR Tizi Ouzou",
+      "location": "Tizi Ouzou",
+      "distance_km": 103.2,
+      "tickets": {
+        "date": "2025-11-11",
+        "total": 95,
+        "processed": 72,
+        "waiting": 23
+      }
+    }
+  }
+]
