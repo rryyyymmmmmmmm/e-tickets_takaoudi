@@ -18,9 +18,10 @@ import Fontisto from "@expo/vector-icons/Fontisto";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 
-import users from "../../../assets/Data/users.json";
+// ⚠️ Assurez-vous que le chemin vers votre fichier JSON est correct
+import users from "../../../assets/Data/users.json"; 
 
-// ✅ Validation schema
+// ✅ Schéma de Validation (Aucun changement nécessaire ici)
 const loginValidationSchema = yup.object().shape({
   numPension: yup
     .string()
@@ -37,28 +38,42 @@ const loginValidationSchema = yup.object().shape({
 });
 
 export default function DoleanceScreen() {
-  const navigation = useNavigation(); // ✅ Use React Navigation
+  const navigation = useNavigation();
   const [passwordVisible, setPasswordVisible] = useState(false);
 
   const formik = useFormik({
     initialValues: { numPension: "", password: "" },
     validationSchema: loginValidationSchema,
     onSubmit: async (values) => {
+      // 1. Chercher l'utilisateur
       const userFound = users.find(
         (u) =>
           u.pension_number === values.numPension &&
           u.password === values.password
       );
 
+      // 2. Vérification des identifiants
       if (!userFound) {
         Alert.alert("Erreur", "Numéro de pension ou mot de passe incorrect");
         return;
       }
 
+      // 3. Connexion réussie : mettre à jour et sauvegarder l'utilisateur
+      const userData = { ...userFound, has_logged_in: true };
+      await AsyncStorage.setItem("currentUser", JSON.stringify(userData));
+
+      // 4. Afficher l'alerte et naviguer
       if (userFound.has_logged_in) {
         Alert.alert(
           "Bienvenue à nouveau 👋",
-          `Heureux de vous revoir ${userFound.first_name}!`
+          `Heureux de vous revoir ${userFound.first_name}!`,
+          [
+            {
+              text: "OK",
+              // ✅ Navigation vers les onglets principaux (MainTabs contient Home)
+              onPress: () => navigation.navigate("MainTabs"),
+            },
+          ]
         );
       } else {
         Alert.alert(
@@ -67,17 +82,12 @@ export default function DoleanceScreen() {
           [
             {
               text: "OK",
-              onPress: () => navigation.navigate("Doleance"), // React Navigation
+              // ✅ Navigation vers les onglets principaux (MainTabs contient Home)
+              onPress: () => navigation.navigate("MainTabs"), 
             },
           ]
         );
       }
-
-      const userData = { ...userFound, has_logged_in: true };
-      await AsyncStorage.setItem("currentUser", JSON.stringify(userData));
-
-      // Navigate to home screen
-      navigation.navigate("Home"); // Replace "Home" with your main tab/screen name
     },
   });
 
@@ -155,7 +165,8 @@ export default function DoleanceScreen() {
 
       {/* Register */}
       <TouchableOpacity
-        onPress={() => navigation.navigate("RegisterScreen")}
+        // ⚠️ Assurez-vous d'avoir un écran "RegisterScreen" dans votre navigation
+        onPress={() => navigation.navigate("RegisterScreen")} 
         activeOpacity={0.7}
       >
         <Text style={styles.register}>
@@ -206,11 +217,11 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     marginLeft: 8,
-    fontFamily:'outfit',
+    fontFamily: "outfit",
   },
   forgot: {
     color: "#0B6EC6",
-    fontFamily:'outfit',
+    fontFamily: "outfit",
     marginBottom: 18,
     alignSelf: "flex-end",
     left: 60,
@@ -226,12 +237,12 @@ const styles = StyleSheet.create({
   buttonText: {
     color: "#fff",
     fontSize: 16,
-    fontFamily:'outfit-medium',
+    fontFamily: "outfit-medium",
   },
   register: {
     marginBottom: 25,
     fontSize: 13,
-    fontFamily:'outfit',
+    fontFamily: "outfit",
     color: "#444",
   },
   bottomRow: {
@@ -250,14 +261,13 @@ const styles = StyleSheet.create({
   },
   faqText: {
     color: "#0B6EC6",
-    fontFamily:'outfit-medium',
+    fontFamily: "outfit-medium",
   },
   errorText: {
     color: "red",
     marginBottom: 5,
-   
     alignSelf: "flex-start",
-    marginLeft:55,
-    fontFamily:'outfit'
+    marginLeft: 55,
+    fontFamily: "outfit",
   },
 });

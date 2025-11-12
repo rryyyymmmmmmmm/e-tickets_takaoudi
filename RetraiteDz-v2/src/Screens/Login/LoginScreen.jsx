@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/*import React, { useState } from "react";
 import {
   Alert,
   Image,
@@ -92,7 +92,7 @@ export default function LoginScreen() {
         resizeMode="contain"
       />
 
-      {/* Pension number input */}
+      
       {formik.touched.numPension && formik.errors.numPension && (
         <Text style={styles.errorText}>{formik.errors.numPension}</Text>
       )}
@@ -112,7 +112,7 @@ export default function LoginScreen() {
         />
       </View>
 
-      {/* Password input */}
+      
       {formik.touched.password && formik.errors.password && (
         <Text style={styles.errorText}>{formik.errors.password}</Text>
       )}
@@ -139,12 +139,12 @@ export default function LoginScreen() {
         </TouchableOpacity>
       </View>
 
-      {/* Forgot password */}
+      
       <TouchableOpacity activeOpacity={0.7}>
         <Text style={styles.forgot}>Mot de passe oublié?</Text>
       </TouchableOpacity>
 
-      {/* Login button */}
+      
       <TouchableOpacity
         style={styles.button}
         onPress={formik.handleSubmit}
@@ -153,7 +153,7 @@ export default function LoginScreen() {
         <Text style={styles.buttonText}>Se connecter</Text>
       </TouchableOpacity>
 
-      {/* Register */}
+      
       <TouchableOpacity
         onPress={() => navigation.navigate("RegisterScreen")}
         activeOpacity={0.7}
@@ -164,7 +164,7 @@ export default function LoginScreen() {
         </Text>
       </TouchableOpacity>
 
-      {/* Bottom icons */}
+      
       <View style={styles.bottomRow}>
         <TouchableOpacity style={styles.circle} activeOpacity={0.8}>
           <Fontisto name="calculator" size={24} color="#0B6EC6" />
