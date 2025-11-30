@@ -1,0 +1,135 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.2.1">
+  <diagram name="Page-1" id="xmU0Iq9DYhfkFGWiODc9">
+    <mxGraphModel dx="1669" dy="1824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="L376kL-CTe3Pn75MxBuy-27" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;endArrow=none;endFill=0;" target="L376kL-CTe3Pn75MxBuy-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Fait) Consultation&lt;div&gt;------------------&lt;/div&gt;&lt;div&gt;id_consultation&lt;/div&gt;&lt;div&gt;id_patient&lt;/div&gt;&lt;div&gt;id_médecin&lt;/div&gt;&lt;div&gt;id_bilan&lt;/div&gt;&lt;div&gt;id_médicament&lt;/div&gt;&lt;div&gt;id_traitement&lt;/div&gt;&lt;div&gt;-----------&lt;/div&gt;&lt;div&gt;coût_analyse&lt;/div&gt;&lt;div&gt;nombre_analyses&lt;/div&gt;&lt;div&gt;coût_médicaments&lt;/div&gt;&lt;div&gt;nombre_médicaments&lt;/div&gt;&lt;div&gt;coût_total&lt;/div&gt;&lt;div&gt;durée_totale_traitement&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="130" x="170" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-23" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="L376kL-CTe3Pn75MxBuy-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Dim) Médecin&lt;div&gt;-------------------&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="360" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Dim) Année&lt;div&gt;-------------------&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="-210" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-15" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="L376kL-CTe3Pn75MxBuy-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Dim) Trimestre&lt;div&gt;-------------------&lt;/div&gt;" vertex="1">
+          <mxGeometry height="65" width="140" x="160" y="-130" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Dim) Service&lt;div&gt;-------------------&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="540" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-14" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="L376kL-CTe3Pn75MxBuy-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Dim) Mois&lt;div&gt;-------------------&lt;/div&gt;" vertex="1">
+          <mxGeometry height="65" width="140" x="160" y="-40" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-13" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="L376kL-CTe3Pn75MxBuy-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="60" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Dim) Jour&lt;div&gt;-------------------&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-24" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="L376kL-CTe3Pn75MxBuy-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Dim) Spécialité&lt;div&gt;-------------------&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="540" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-25" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="L376kL-CTe3Pn75MxBuy-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Fait) Médicament&lt;div&gt;-------------------&lt;/div&gt;&lt;div&gt;id_consultation&lt;/div&gt;&lt;div&gt;&lt;div&gt;id_patient&lt;/div&gt;&lt;div&gt;id_médecin&lt;/div&gt;&lt;div&gt;id_bilan&lt;/div&gt;&lt;/div&gt;&lt;div&gt;---------------------&lt;/div&gt;&lt;div&gt;Quantité&lt;/div&gt;&lt;div&gt;durée_traitement&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="140" x="165" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Dim) Traitement&lt;div&gt;-------------------&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="165" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-22" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="L376kL-CTe3Pn75MxBuy-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Dim) Patient&lt;div&gt;-------------------&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="380" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Dim) Tranche d&#39;Age&lt;div&gt;-------------------&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="530" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-28" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;endArrow=none;endFill=0;" target="L376kL-CTe3Pn75MxBuy-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="115" as="sourcePoint" />
+            <mxPoint x="360" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-30" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;endArrow=none;endFill=0;" target="L376kL-CTe3Pn75MxBuy-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="330" as="sourcePoint" />
+            <mxPoint x="230" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Dim) Analyse Médicale&lt;div&gt;-------------------&lt;/div&gt;&lt;div&gt;id&lt;/div&gt;&lt;div&gt;type&lt;/div&gt;&lt;div&gt;val_min&lt;/div&gt;&lt;div&gt;val_max&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="-260" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-34" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="L376kL-CTe3Pn75MxBuy-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(Dim) Bilan&lt;div&gt;-------------------&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="-80" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-35" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;endArrow=none;endFill=0;" target="L376kL-CTe3Pn75MxBuy-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="380" as="sourcePoint" />
+            <mxPoint x="220" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-36" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;endArrow=none;endFill=0;" target="L376kL-CTe3Pn75MxBuy-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="320" as="sourcePoint" />
+            <mxPoint x="380" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-37" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;curved=1;endArrow=none;endFill=0;" target="L376kL-CTe3Pn75MxBuy-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-39" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.999;entryY=0.297;entryDx=0;entryDy=0;curved=1;endArrow=none;endFill=0;entryPerimeter=0;" target="L376kL-CTe3Pn75MxBuy-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="440" as="sourcePoint" />
+            <mxPoint x="420" y="472" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-41" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;curved=1;endArrow=none;endFill=0;" target="L376kL-CTe3Pn75MxBuy-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="450" as="sourcePoint" />
+            <mxPoint x="220" y="482" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-42" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;curved=1;endArrow=none;endFill=0;" target="L376kL-CTe3Pn75MxBuy-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="420" as="sourcePoint" />
+            <mxPoint x="190" y="452" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L376kL-CTe3Pn75MxBuy-43" edge="1" parent="1" source="L376kL-CTe3Pn75MxBuy-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;curved=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="L376kL-CTe3Pn75MxBuy-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="500" as="sourcePoint" />
+            <mxPoint x="70" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
